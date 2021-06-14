@@ -1,0 +1,74 @@
+{% extends "miApp/base.html" %}
+
+{% block content %}
+
+{% load static %}
+
+<div class="container-fluid">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-sm">
+                    <form id="formulario_contacto" class="form-horizontal" method="post">
+                        <fieldset>
+                            <legend class="text-center header font-weight-bold text-uppercase ">Contactanos</legend>
+
+                            <center>
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center">Nombre  <i class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-5">
+                                        <input id="nombre" name="nombre" type="text" placeholder="Juanito" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center">Apellido  <i class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-5">
+                                        <input id="apellido" name="apellido" type="text" placeholder="Perez" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center">Email  <i class="fa fa-envelope-o bigicon"></i></span>
+                                    <div class="col-md-5">
+                                        <input id="email" name="email" type="text" placeholder="ej: abcd@gmail.com" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center">Celular 569  <i class="fa fa-phone-square bigicon"></i></span>
+                                    <div class="col-md-5">
+                                        <input id="celular" name="celular" type="text" placeholder="Ej: 87945612 " class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center">Mensaje  <i class="fa fa-pencil-square-o bigicon"></i></span>
+                                    <div class="col-md-5">
+                                        <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Escriba su mensaje" rows="7"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-8 text-center">
+                                        <button class="boton1" type="submit" id="enviar" >Enviar</button>
+                                        <button class="boton1" type="reset" id="limpiar" >Limpiar</button>
+                                        <div class="form-group">
+                                        </div>
+                                    </div>
+                        </fieldset>
+                    </form>
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+                    <script src="{% static 'miApp/js/formulario.js' %}"></script>
+                    </div>
+                </div>
+                
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends "miApp/base.html" %}
+
+{% block content %}
+{% load static %}
+<div class="container" style="margin-top:30px">
+    <div class="row">
+        <div class="col-sm-4">
+            <center>
+                <h2>Sobre Nosotros</h2>
+            </center>
+            <center>
+                <h5>NewsChile</h5>
+            </center>
+            <div class="imagenLogo"><img src="{% static 'miApp/img/Logo.png' %}" class="centrado" alt="..."></div>
+            <center>
+                <p>Un grupo de jóvenes estudiantes de periodismo y de comunicación audio visual, cansados de los medios tradicionales, deciden formar un colectivo de noticias llamado “NewsChile”.</p>
+            </center>
+            <br>
+
+            <center>
+                <h3>Nuestros canales oficiales</h3>
+            </center>
+            <ul class="nav nav-pills flex-column">
+                <center>
+                    <li class="nav-item">
+                        <a class="link-dark" href=""> Facebook <i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link-dark" href="#">Instagram<i class="fab fa-instagram"></i>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link-dark" href=""> Twitter <i class="fab fa-twitter"></i></a>
+                    </li>
+                </center>
+            </ul>
+            <hr class="d-sm-none">
+        </div>
+        <div class="col-sm-8">
+            <center>
+                <h2>NUESTRO OBJETIVO</h2>
+            </center>
+
+            <div class="imgQSomos1"><img src="{% static 'miApp/img/QuienesSomos.jpg' %}" class="centrado" alt="reunion"></div>
+
+            <center>
+                <p>Cada una de las personas que se une a esta idea, aporta con su experiencia y de esta forma asignan las tareas a cada uno de los integrantes para tratar de cubrir de la mejor forma posible las noticias que están pasando en Chile y el
+                    mundo con una mirada fresca y joven.
+                </p>
+            </center>
+            <br>
+            <center>
+                <h2>COMPROMISO</h2>
+            </center>
+
+            <div class="imgQSomos1"><img src="{% static 'miApp/img/QuienesSomos2.jpg' %}" class="centrado" alt="fotografia"></div>
+
+            <center>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis exercitationem quia, accusamus aperiam dolore deleniti impedit omnis voluptatem at, harum sunt saepe iste. Voluptas consequatur consequuntur nobis quasi eius iusto?</p>
+            </center>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

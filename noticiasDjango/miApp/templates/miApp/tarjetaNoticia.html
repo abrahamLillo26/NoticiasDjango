@@ -1,0 +1,28 @@
+
+{% extends "miApp/base.html" %}
+
+{% block content %}
+{% load static %}
+<div class="container">
+    <article>
+        <h1><b>Politica</b></h1>
+        <br>
+        <p>
+            <h1>Lavín por ataque a equipo de TVN: "Es un atentado terrorista"</h1>
+        </p>
+        <!--imagen noticia-->
+        <div class="imgcard1 m-0 row justify-content-center">
+            <img class="cards" src="{% static 'miApp/img/imgtarjeta/card1.jpg' %}" alt="joaquin lavin">
+        </div>
+        <br>
+        <div class="texto-noticia">
+            <h1><b>Joaquín Lavín</b></h1>
+            <p class="noticia">El alcalde de Las Condes y candidato presidencial, Joaquín Lavín se refirió al ataque que sufrió el equipo del departamento de prensa de Televisión Nacional en Tirúa, calificándolo de "un atentado terrorista". Asimismo criticó a la oposición,
+                señalando que "relativiza" la violencia, porque "les cuesta hablar de la palabra terrorismo".
+            </p>
+        </div>
+    </article>
+</div>
+
+
+{% endblock %}
