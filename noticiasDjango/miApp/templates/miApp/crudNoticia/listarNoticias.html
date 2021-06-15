@@ -1,0 +1,30 @@
+{% extends 'miApp/base.html' %}
+
+{% block content %}
+<div class="card">
+    <div class="card-body">
+        <table class="table table-responsive-sm">
+            <tr>
+                <th>título</th>
+                <th>descripción corta</th>
+                <th>fecha de la noticia</th>
+            </tr>
+        
+            {% for n in noticias %}
+            <tr>
+                <td>{{ n.tituloNoticia }}</td>
+                <td>{{ n.descripcioCorta }}</td>
+                <td>{{ n.fechaNoticia }}</td>
+
+                <td>
+                    <a href="{% url 'modificarNoticia' n.id %}">modificar</a>
+                    <a href="{% url 'eliminarNoticia' n.id %}">eliminar</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+
+
+{% endblock %}
